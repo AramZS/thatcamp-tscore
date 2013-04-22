@@ -1,0 +1,18 @@
+sample html
+
+'<div class="tweet '.$selects.'" style="'.$style.'" id="'.$c.'">
+					<div class="source_meta">'.$tweet['name'].'</div>
+					<div class="tweet_meta" correct="'.$tweet['correct'].'"><span class="interest">'.$tweet['interest'].'</span> | <span class="reliability">'.$tweet['reliability'].'</span></div>
+				</div>';
+				
+						<?php
+			$c = 0;
+			foreach ($tweets as $tweet){
+			if (!($c >= 75)){$style = 'display: none;'; $selects = ' '; } else { $style = ' '; $selects = 'active'; }
+				echo '<div class="tweet '.$selects.'" style="'.$style.'" id="'.$c.'">
+					<div class="source_meta">'.$tweet['name'].'</div>
+					<div class="tweet_meta" correct="'.$tweet['correct'].'"><span class="interest">'.$tweet['interest'].'</span> | <span class="reliability">'.$tweet['reliability'].'</span></div>
+				</div>';
+				$c++;
+			}
+		?>

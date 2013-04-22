@@ -1,0 +1,28 @@
+body {
+
+}
+
+#org {
+
+	float:left;
+	border: 1px solid black;
+	width: 45%;
+
+}
+
+#sources {
+
+	float: right;
+	border: 1px solid black;
+	width: 45%;
+
+}
+
+.tweet {
+	width: 100%;
+	border: 1px solid blue;
+}
+
+.data-span {
+	font-weight: bold;
+}
